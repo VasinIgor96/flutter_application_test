@@ -5,9 +5,17 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('IntroScreen'),
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+
+            Image.asset('assets/back/back_intro.png'),
+            const Center(
+              child: Text('IntroScreen'),
+            )
+          ],
+        ),
       ),
     );
   }
